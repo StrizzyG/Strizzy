@@ -354,4 +354,6 @@ to {background-position: -100px 0px;background-size:2750px;}
   color:rgba(255, 255, 255, 0.116);
   font-family: 'Source Code Pro', monospace;
   text-transform:uppercase;
+  border-style: dotted;
+  border-width: 10px;
 }
