@@ -298,3 +298,29 @@ img {
  
 
 }
+
+
+
+
+
+
+@keyframes move-it {
+  0% {
+    background-position: initial;
+  }
+  100% {
+    background-position: 100px 0px;
+  }
+}
+
+body {  
+  background: repeating-linear-gradient(
+  45deg,
+  #b4bdf7,
+  #3b53f5 5%,
+  #2743e2 5%,
+  #bec5e9 10%
+);
+  background-size: 100px 100px;
+  animation: move-it 2s linear infinite;
+}
