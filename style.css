@@ -1,0 +1,300 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "poppins", sans-serif;
+}
+
+.body {
+    min-height: 100vh;
+    background: white
+    background-position center;
+    background-size: cover;
+}
+
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 850px;
+    width: 100%;
+    padding: 20px 100px;
+    background: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100%;
+}
+
+
+.logo {
+    font-size: 32px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 700;
+    margin-top: 45px;
+}
+
+
+.navbar a {
+    position: relative;
+    font-size: 18px;
+    color: #fff;
+    font-weight: 500;
+    text-decoration: none;
+    margin-left: 40px;
+    top: 0;
+}
+
+
+.navbar a::before {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: #fff;
+    transition: .3s;
+}
+
+
+.navbar a:hover::before {
+    width: 100%;
+    top: 0;
+}
+
+
+
+.navbarr a {
+    position: relative;
+    font-size: 18px;
+    color: #fff;
+    font-weight: 500;
+    text-decoration: none;
+    margin-left: 40px;
+    scroll-snap-type: proximity;
+    position:fixed;
+    top: 0;
+    transition: top 0.3s;
+    
+}
+
+
+
+.navbarr a::before {
+    content: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: #fff;
+    transition: .3s;
+    transition: top 0.3s;
+    
+}
+
+
+.navbarr a:hover::before {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    transition: top 0.3s;
+
+}
+
+
+.txt {
+    top: 100px;
+    margin-right: 100px;
+    position: relative;
+  
+}
+
+
+img {
+    width: 100px;
+    border-radius: 50px;
+    float: left;
+    margin-right: 10px;
+    position: relative;
+  }
+
+  .username {
+    font-weight: bold;
+  }
+
+  .billede {
+    float: right;
+    border-radius: 40px;
+    margin-right: 100px;
+    position: relative;
+  }
+
+  .text {
+    float: left;
+    border-radius: 40px;
+    margin-right: 100px;
+    position: relative;
+  }
+
+  .txt {
+    margin-top: 1rem;
+    align-self: center;
+    align-content: space-between;
+    position: relative;
+    margin-left: 50rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+
+  .pcbillede {
+    border-radius: 40px;
+    margin-top: 200px;
+    margin-left: 100px;
+    width: 700px;
+    height: 650px;
+    position: fixed;
+  }
+
+  .motherboard {
+    border-radius: 40px;
+    margin-top: 200px;
+    margin-left: 1150px;
+    width: 700px;
+    height: 650px;
+    position: fixed;
+  }
+
+  .download-btn {
+    background-color: dodgerblue;
+    color: white;
+    padding: 1rem 2rem;
+    font-size: 2rem;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 1500px;
+    margin-right: -1820px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    position: 'relative';
+  }
+
+
+
+  .fpsboostxt {
+    
+   
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-top: 10rem;
+    align-self: center;
+    align-content: space-between;
+    position: fixed;
+    margin-left: 45rem;
+  }
+
+
+  .LAG {
+    margin-top: 200px;
+    margin-left:800px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    position: fixed;
+  }
+
+
+  .contactmail {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-top: 108rem;
+    margin-left: -5rem;
+    justify-content: end;
+    position: fixed;
+
+  }
+
+  .boostbillede {
+    margin-left: -70px;
+    margin-bottom: -1000px;
+    
+    width: 1100px;
+    height: 650px;
+    position: fixed;
+    border-radius: 0px;
+    border-color: black;
+    border-style: double;
+    border-radius: 1rem;
+
+  }
+
+
+  .txtaboutfps {
+    position: fixed;
+    margin-top: 25rem;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-left: 65rem;
+
+    
+    
+    
+
+ 
+   
+
+    
+  }
+
+
+
+  .downloadtxt {
+    margin-top: 80rem;
+    margin-left: 88rem;
+    position: fixed;
+
+
+  }
+
+
+  .pilned1 {
+    position: fixed;
+    margin-top: 93rem;
+    margin-left: 84rem;
+    background: transparent;
+    width: 6rem;
+    color: white;
+  }
+
+
+
+.ttv {
+  position: fixed;
+  margin-top: 30rem;
+  margin-left: 37rem;
+  border-radius: 0px;
+ 
+
+}
+
+.twt {
+  position: fixed;
+  margin-top: 30rem;
+  margin-left: 47rem;
+  border-radius: 0px;
+
+
+}
+
+.yt {
+  position: fixed;
+  margin-top: 30rem;
+  margin-left: 57rem;
+  border-radius: 0px;
+ 
+
+}
+.tiktok {
+  position: fixed;
+  margin-top: 30rem;
+  margin-left: 67rem;
+  border-radius: 0px;
+ 
+
+}
