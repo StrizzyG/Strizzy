@@ -304,23 +304,54 @@ img {
 
 
 
-@keyframes move-it {
-  0% {
-    background-position: initial;
-  }
-  100% {
-    background-position: 100px 0px;
-  }
+@import url('https://fonts.googleapis.com/css?family=Source+Code+Pro:200');
+
+body  {
+    background-image: url('https://static.pexels.com/photos/414171/pexels-photo-414171.jpeg');
+  background-size:cover;
+        -webkit-animation: slidein 10s;
+        animation: slidein 10s;
+
+        -webkit-animation-fill-mode: forwards;
+        animation-fill-mode: forwards;
+
+        -webkit-animation-iteration-count: infinite;
+        animation-iteration-count: infinite;
+
+        -webkit-animation-direction: alternate;
+        animation-direction: alternate;              
 }
 
-body {  
-  background: repeating-linear-gradient(
-  45deg,
-  #b4bdf7,
-  #3b53f5 5%,
-  #2743e2 5%,
-  #bec5e9 10%
-);
-  background-size: 100px 100px;
-  animation: move-it 2s linear infinite;
+@-webkit-keyframes slidein {
+from {background-position: top; background-size:3000px; }
+to {background-position: -100px 0px;background-size:2750px;}
+}
+
+@keyframes slidein {
+from {background-position: top;background-size:3000px; }
+to {background-position: -100px 0px;background-size:2750px;}
+
+}
+
+
+
+.center
+{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  margin: auto;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(255, 0, 0, 0);
+  border-radius: 3px;
+}
+.center h1{
+  text-align:center;
+  color:rgba(255, 255, 255, 0.116);
+  font-family: 'Source Code Pro', monospace;
+  text-transform:uppercase;
 }
