@@ -351,7 +351,7 @@ to {background-position: -100px 0px;background-size:2750px;}
 }
 .center h1{
   text-align:center;
-  color:rgba(255, 255, 255, 0.116);
+  color:rgb(0, 0, 0);
   font-family: 'Source Code Pro', monospace;
   text-transform:uppercase;
   border-style: dotted;
