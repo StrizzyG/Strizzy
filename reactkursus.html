@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>React Course - YourReact.com</title>
+    <link rel="stylesheet" href="reactkursus.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+    <!-- Include React and ReactDOM libraries -->
+    <script crossorigin src="https://unpkg.com/react@17/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"></script>
+    <!-- Include Babel standalone for JSX transformation -->
+    <script crossorigin src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>StrizzyG.com</h1>
+            <nav>
+                <ul>
+                    <li><a href="index (1).html">Home</a></li>
+                    <li><a href="kurser.html">Courses</a></li>
+                    <li><a href="omos.html">About Us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <h2>Become a React Expert</h2>
+            <p>Learn front-end development with React.</p>
+        </div>
+    </section>
+
+    <section class="lessons">
+        <div class="container">
+            <h2>React Lessons and Exercises</h2>
+            
+            <div class="exercise">
+                <h3>Lesson 1: Introduction to React</h3>
+                <p>React is a JavaScript library for building user interfaces.</p>
+                <p><strong>Exercise:</strong> Create a React component to render "Hello, World!"</p>
+                <div id="exercise1"></div>
+            </div>
+
+            <div class="exercise">
+                <h3>Lesson 2: State and Props</h3>
+                <p>Learn about React state and props.</p>
+                <p><strong>Exercise:</strong> Create a React component to display your name and age.</p>
+                <div id="exercise2"></div>
+            </div>
+
+            <div class="exercise">
+                <h3>Lesson 3: Handling Events</h3>
+                <p>Understand event handling in React.</p>
+                <p><strong>Exercise:</strong> Create a React component to count and display even numbers between 1 to 10.</p>
+                <div id="exercise3"></div>
+            </div>
+
+            <!-- Additional exercises can be added here -->
+
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 StrizzyG.com. All rights reserved.</p>
+            <ul class="social">
+                <li><a href="https://www.instagram.com/strizzyg/" target="_blank"><i class="fab fa-instagram"></i></a></li>
+                <li><a href="https://x.com/StrizzyGG" target="_blank"><i class="fab fa-twitter"></i></a></li>
+                
+            </ul>
+        </div>
+    </footer>
+
+    <!-- React components -->
+    <script type="text/babel">
+        // Exercise 1: Hello World Component
+        const Exercise1 = () => {
+            return (
+                <p style={{ color: '#007BFF', fontWeight: 'bold' }}>Hello, World!</p>
+            );
+        };
+        ReactDOM.render(<Exercise1 />, document.getElementById('exercise1'));
+
+        // Exercise 2: Name and Age Component
+        const Exercise2 = () => {
+            const name = 'John Doe';
+            const age = 30;
+            return (
+                <div>
+                    <p>Name: {name}</p>
+                    <p>Age: {age}</p>
+                </div>
+            );
+        };
+        ReactDOM.render(<Exercise2 />, document.getElementById('exercise2'));
+
+        // Exercise 3: Even Numbers Component
+        const Exercise3 = () => {
+            const numbers = [];
+            for (let i = 1; i <= 10; i++) {
+                if (i % 2 === 0) {
+                    numbers.push(i);
+                }
+            }
+            return (
+                <div>
+                    {numbers.map(num => (
+                        <p key={num}>{num}</p>
+                    ))}
+                </div>
+            );
+        };
+        ReactDOM.render(<Exercise3 />, document.getElementById('exercise3'));
+    </script>
+</body>
+</html>

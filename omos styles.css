@@ -1,0 +1,114 @@
+body {
+  font-family: 'Open Sans', sans-serif;
+  background-color: #F5F3F4;
+  color: #161A1D;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Minimum height of viewport */
+}
+
+header {
+  background-color: #0B090A;
+  color: #FFFFFF;
+  padding: 20px 0; /* Reduced padding to make header thinner */
+  width: 100%;
+  z-index: 1000;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Added box shadow for a modern look */
+}
+
+header .container {
+  max-width: 1200px;
+  width: 95%; /* Centered with 5% padding on left and right */
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+header nav ul li {
+  margin-left: 20px;
+}
+
+header nav ul li a {
+  color: #FFFFFF;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+header nav ul li a:hover {
+  text-decoration: underline;
+}
+
+.hero {
+  background-color: #660708;
+  color: #FFFFFF;
+  padding: 50px 0; /* Justeret padding for at gøre blokken lidt lavere */
+  text-align: center;
+}
+
+
+.team {
+  background-color: #FFFFFF;
+  padding: 50px 0;
+  text-align: center;
+}
+
+.team .container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.technologies {
+  background-color: #F5F3F4;
+  padding: 50px 0;
+  text-align: center;
+}
+
+.icons {
+  font-size: 3rem;
+  color: #444;
+}
+
+.icons i {
+  margin: 0 10px;
+}
+
+footer {
+  background-color: #0B090A;
+  color: #FFFFFF;
+  text-align: center;
+  padding: 20px 0;
+  margin-top: auto; /* Pushes the footer to the bottom */
+}
+
+footer .social {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+footer .social li {
+  margin: 0 10px;
+}
+
+footer .social li a {
+  color: #FFFFFF;
+  text-decoration: none;
+  font-size: 1.5em;
+}
+
+footer .social li a:hover {
+  color: #E5383B;
+}

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SQL and Databases Course - StrizzyG.com</title>
+    <link rel="stylesheet" href="sqldatabaseskursus.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>StrizzyG.com</h1>
+            <nav>
+                <ul>
+                    <li><a href="index (1).html">Home</a></li>
+                    <li><a href="kurser.html">Courses</a></li>
+                    <li><a href="omos.html">About Us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <h2>Become a SQL and Databases Expert</h2>
+            <p>Learn about SQL and database management.</p>
+        </div>
+    </section>
+
+    <section class="lessons">
+        <div class="container">
+            <h2>SQL and Databases Lessons and Exercises</h2>
+            
+            <div class="exercise">
+                <h3>Lesson 1: Introduction to SQL</h3>
+                <p>SQL (Structured Query Language) is used to manage and manipulate databases.</p>
+                <p><strong>Exercise:</strong> Write a SQL query to select all records from a table named "users".</p>
+                <pre><code>
+SELECT * FROM users;
+                </code></pre>
+            </div>
+
+            <div class="exercise">
+                <h3>Lesson 2: SQL CRUD Operations</h3>
+                <p>Learn about SQL CRUD operations: Create, Read, Update, and Delete.</p>
+                <p><strong>Exercise:</strong> Write a SQL query to insert a new record into a table named "products".</p>
+                <pre><code>
+INSERT INTO products (name, price, category) 
+VALUES ('Product A', 50.00, 'Electronics');
+                </code></pre>
+            </div>
+
+            <div class="exercise">
+                <h3>Lesson 3: SQL Joins</h3>
+                <p>Understand SQL joins to retrieve data from multiple tables.</p>
+                <p><strong>Exercise:</strong> Write a SQL query to join "orders" and "customers" tables.</p>
+                <pre><code>
+SELECT * 
+FROM orders
+JOIN customers ON orders.customer_id = customers.id;
+                </code></pre>
+            </div>
+
+            <!-- Additional exercises can be added here -->
+
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 StrizzyG.com. All rights reserved.</p>
+            <ul class="social">
+                <li><a href="https://www.instagram.com/strizzyg/" target="_blank"><i class="fab fa-instagram"></i></a></li>
+                <li><a href="https://x.com/StrizzyGG" target="_blank"><i class="fab fa-twitter"></i></a></li>
+               
+            </ul>
+        </div>
+    </footer>
+
+</body>
+</html>

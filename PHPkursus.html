@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PHP Course - YourPHP.com</title>
+    <link rel="stylesheet" href="PHPstyles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>StrizzyG.com</h1>
+            <nav>
+                <ul>
+                    <li><a href="index (1).html">Home</a></li>
+                    <li><a href="kurser.html">Courses</a></li>
+                    <li><a href="omos.html">About Us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <h2>Become a PHP Expert</h2>
+            <p>Learn server-side scripting with PHP.</p>
+        </div>
+    </section>
+
+    <section class="lessons">
+        <div class="container">
+            <h2>PHP Lessons and Exercises</h2>
+            
+            <div class="exercise">
+                <h3>Lesson 1: Introduction to PHP</h3>
+                <p>PHP stands for Hypertext Preprocessor. It is a widely-used open source server-side scripting language.</p>
+                <p><strong>Exercise:</strong> Write a PHP script to print "Hello, World!"</p>
+                <?php
+                // Exercise 1 Solution
+                echo "<p style='color: #007BFF; font-weight: bold;'>Hello, World!</p>";
+                ?>
+            </div>
+
+            <div class="exercise">
+                <h3>Lesson 2: Variables and Data Types</h3>
+                <p>Learn about PHP variables and different data types such as strings, integers, floats, and booleans.</p>
+                <p><strong>Exercise:</strong> Create variables for your name, age, and favorite programming language.</p>
+                <?php
+                // Exercise 2 Solution
+                $name = "John Doe";
+                $age = 30;
+                $favoriteLanguage = "PHP";
+                echo "<p>Name: $name</p>";
+                echo "<p>Age: $age</p>";
+                echo "<p>Favorite Language: $favoriteLanguage</p>";
+                ?>
+            </div>
+
+            <div class="exercise">
+                <h3>Lesson 3: Control Structures</h3>
+                <p>Understand PHP control structures such as if statements, switch statements, and loops.</p>
+                <p><strong>Exercise:</strong> Write a PHP script to display even numbers between 1 to 10.</p>
+                <?php
+                // Exercise 3 Solution
+                for ($i = 1; $i <= 10; $i++) {
+                    if ($i % 2 == 0) {
+                        echo "<p>$i</p>";
+                    }
+                }
+                ?>
+            </div>
+
+            <!-- Additional exercises can be added here -->
+
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 StrizzyG.com. All rights reserved.</p>
+            <ul class="social">
+                <li><a href="https://www.instagram.com/strizzyg/" target="_blank"><i class="fab fa-instagram"></i></a></li>
+                <li><a href="https://x.com/StrizzyGG" target="_blank"><i class="fab fa-twitter"></i></a></li>
+                
+            </ul>
+        </div>
+    </footer>
+
+</body>
+</html>
