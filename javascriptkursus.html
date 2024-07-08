@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Course - StrizzyG.com</title>
+    <link rel="stylesheet" href="javascriptkursus.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>StrizzyG.com</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="kurser.html">Courses</a></li>
+                    <li><a href="omos.html">About Us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <h2>Become a JavaScript Expert</h2>
+            <p>Learn client-side scripting with JavaScript.</p>
+        </div>
+    </section>
+
+    <section class="lessons">
+        <div class="container">
+            <h2>JavaScript Lessons and Exercises</h2>
+            
+            <div class="exercise">
+                <h3>Lesson 1: Introduction to JavaScript</h3>
+                <p>JavaScript is a high-level, interpreted programming language used to make web pages interactive.</p>
+                <p><strong>Exercise:</strong> Write a JavaScript script to print "Hello, World!"</p>
+                <script>
+                    // Exercise 1 Solution
+                    document.write("<p style='color: #007BFF; font-weight: bold;'>Hello, World!</p>");
+                </script>
+            </div>
+
+            <div class="exercise">
+                <h3>Lesson 2: Variables and Data Types</h3>
+                <p>Learn about JavaScript variables and different data types such as strings, numbers, booleans, and undefined.</p>
+                <p><strong>Exercise:</strong> Create variables for your name, age, and favorite programming language.</p>
+                <script>
+                    // Exercise 2 Solution
+                    var name = "John Doe";
+                    var age = 30;
+                    var favoriteLanguage = "JavaScript";
+                    document.write("<p>Name: " + name + "</p>");
+                    document.write("<p>Age: " + age + "</p>");
+                    document.write("<p>Favorite Language: " + favoriteLanguage + "</p>");
+                </script>
+            </div>
+
+            <div class="exercise">
+                <h3>Lesson 3: Control Structures</h3>
+                <p>Understand JavaScript control structures such as if statements, switch statements, and loops.</p>
+                <p><strong>Exercise:</strong> Write a JavaScript script to display even numbers between 1 to 10.</p>
+                <script>
+                    // Exercise 3 Solution
+                    for (var i = 1; i <= 10; i++) {
+                        if (i % 2 === 0) {
+                            document.write("<p>" + i + "</p>");
+                        }
+                    }
+                </script>
+            </div>
+
+            <!-- Additional exercises can be added here -->
+
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 StrizzyG.com. All rights reserved.</p>
+            <ul class="social">
+                <li><a href="https://www.instagram.com/strizzyg/" target="_blank"><i class="fab fa-instagram"></i></a></li>
+                <li><a href="https://x.com/StrizzyGG" target="_blank"><i class="fab fa-twitter"></i></a></li>
+                
+            </ul>
+        </div>
+    </footer>
+
+</body>
+</html>
